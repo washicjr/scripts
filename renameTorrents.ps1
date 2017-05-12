@@ -1,0 +1,1 @@
+Dir | rename-item -newname  { $_.Name +".torrent" }

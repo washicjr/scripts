@@ -1,0 +1,1 @@
+get-process MicrosoftEdge | stop-process
