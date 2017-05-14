@@ -1,1 +1,1 @@
-Dir | rename-item -newname { $_.Name +".torrent" }
+Get-ChildItem | rename-item -newname { $_.Name +".torrent" }
