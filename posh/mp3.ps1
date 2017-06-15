@@ -23,8 +23,7 @@ get-childitem C:\sysutil\tmp\music -include *.mp3 -recurse | ForEach-Object ($_)
     $lyrics = $lyrics -replace "taglib-sharp, Version=2.1.0.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0", ""
     
   if($lyrics -ne "NO LYRICS"){
-      write-host $LyricDir
-      write-host $lyricFile
-      $Lyrics | New-Item -path $lyricDir -Name $lyricFile -ItemType file -force
+      $fullPath = $lyricDir + "\" + $LyricFile
+      $Lyrics | New-Item -path $fullPath -ItemType file -force
    }
 }
