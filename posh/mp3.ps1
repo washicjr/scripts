@@ -18,11 +18,13 @@ get-childitem E:\.tmp\music\mp3 -include *.mp3 -recurse | ForEach-Object ($_) {
     $lyricFile = $_.Name
     $lyricFile = $lyricFile -replace ".mp3", ".txt"
     $lyricFile = $lyricDir + "\" + $lyricFile
+    write-host $lyricFile
 
   if($lyrics -ne "NO LYRICS"){
       if (! (test-path $lyricDir)){
         New-Item $lyricDir -type directory
       }
-      $Lyrics | Out-File -FilePath $LyricFile
+      #$Lyrics | Out-File -FilePath $LyricFile
+      $Lyrics | New-Item -path $lyricDir -Name $lyricFile -ItemType file -force
    }
 }
