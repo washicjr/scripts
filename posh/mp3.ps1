@@ -1,4 +1,4 @@
- [Reflection.Assembly]::LoadFrom("C:\sysutil\tmp\taglib-sharp.dll")
+[Reflection.Assembly]::LoadFrom("C:\sysutil\tmp\taglib-sharp.dll")
 function getLyrics($mp3file){
     $mp3 = [TagLib.File]::Create($mp3file)
     $mp3Lyrics = $mp3.Tag.Lyrics
