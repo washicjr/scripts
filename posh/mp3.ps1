@@ -1,11 +1,12 @@
 $musicSrc = "E:\.tmp\music\mp3"
 $assemblyLoc = "C:\sysutil\git\scripts\posh\modules\ID3\1.1\taglib-sharp.dll"
+
 [Reflection.Assembly]::LoadFrom($assemblyLoc)
 function getLyrics($musicfile){
     $music = [TagLib.File]::Create($musicfile)
     $musicLyrics = $music.Tag.Lyrics
     if($musicLyrics.length -eq 0){
-        return "NO LYRICS"
+        return "NO LYRICS FOUND"
     }Else{
         return $musicLyrics
     }
@@ -21,11 +22,13 @@ get-childitem $musicSrc -include *.mp3 -recurse | ForEach-Object ($_) {
     $lyricFile = [string]$lyricFileTmp
     $lyricFile = $lyricFile -replace ".mp3", ".txt"
    
-    $lyrics = getLyrics($musicFileName)
-    $lyrics = $lyrics -replace "taglib-sharp, Version=2.1.0.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0", ""
+    $music = [TagLib.File]::Create($musicFileName)
+    $musicLyrics = $music.Tag.Lyrics
+    if($musicLyrics.length -eq 0){ $musicLyrics = "NO LYRICS FOUND"}
+    $musicLyrics = $musicLyrics -replace "taglib-sharp, Version=2.1.0.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0", ""
     
-  if($lyrics -ne "NO LYRICS"){
+  if($musicLyrics -ne "NO LYRICS FOUND"){
       $fullPath = $lyricDir + "\" + $LyricFile
-      $Lyrics | New-Item -path $fullPath -ItemType file -force
+      $musicLyrics | New-Item -path $fullPath -ItemType file -force
    }
 }
