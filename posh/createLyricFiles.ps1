@@ -1,5 +1,5 @@
 $crlf = "`r`n"
-$musicSrc = "E:\.tmp\music\mp3"
+$musicSrc = "E:\music\mp3"
 $assemblyLoc = "C:\sysutil\git\scripts\posh\modules\ID3\1.1\taglib-sharp.dll"
 
 [Reflection.Assembly]::LoadFrom($assemblyLoc)
