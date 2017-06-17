@@ -1,6 +1,6 @@
 $crlf = "`r`n"
 $musicSrc = "E:\.tmp\music"
-$assemblyLoc = "C:\sysutil\git\scripts\posh\modules\ID3\1.1\taglib-sharp.dll"
+$assemblyLoc = "C:\sysutil\git\scripts\lib\taglib-sharp.dll"
 
 [Reflection.Assembly]::LoadFrom($assemblyLoc)
 
