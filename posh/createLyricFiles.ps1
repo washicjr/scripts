@@ -1,10 +1,10 @@
 $crlf = "`r`n"
-$musicSrc = "E:\music\mp3"
+$musicSrc = "E:\.tmp\music"
 $assemblyLoc = "C:\sysutil\git\scripts\posh\modules\ID3\1.1\taglib-sharp.dll"
 
 [Reflection.Assembly]::LoadFrom($assemblyLoc)
 
-get-childitem $musicSrc -include *.mp3 -recurse | ForEach-Object ($_) {
+get-childitem $musicSrc -include *.m4a, *.mp3 -recurse | ForEach-Object ($_) {
     $musicFileName = $_.FullName
     $lyricDirTmp = $_.Directory
     $lyricFileTmp = $_.Name
@@ -19,6 +19,7 @@ get-childitem $musicSrc -include *.mp3 -recurse | ForEach-Object ($_) {
         $lyricDir = $lyricDir + "\lyrics"
         $lyricFile = [string]$lyricFileTmp
         $lyricFile = $lyricFile -replace ".mp3", ".txt"
+        $lyricFile = $lyricFile -replace ".m4a", ".txt"
         $fullPath = $lyricDir + "\" + $LyricFile
 
         $musicAlbumArtist = $music.Tag.AlbumArtists
