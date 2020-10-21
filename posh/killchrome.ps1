@@ -1,1 +1,0 @@
-Get-Process chrome | stop-process

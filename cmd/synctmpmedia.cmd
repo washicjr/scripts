@@ -1,0 +1,1 @@
+robocopy e:\.tmp z:\bkp\e\.tmp /w:1 /r:1 /mir

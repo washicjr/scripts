@@ -1,0 +1,1 @@
+flute.exe run %OneDriveConsumer%\sysutil\scripts\cmd\syncmedia.bat --directory %OneDriveConsumer%\sysutil\scripts\cmd --theme cwjPowerShell --target=window
