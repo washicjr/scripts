@@ -1,3 +1,5 @@
+#Requires -PSEdition Core
+
 $tagFile = "E:\.tmp\music\.meta\tags\tags.txt"
 
 $newStr = Get-Clipboard -Raw

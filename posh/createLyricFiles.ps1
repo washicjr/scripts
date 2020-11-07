@@ -1,3 +1,5 @@
+#Requires -PSEdition Core
+
 $crlf = "`r`n"
 $musicSrc = "E:\.tmp\music"
 #$musicSrc = "D:\users\Clarence\OneDrive\Music"

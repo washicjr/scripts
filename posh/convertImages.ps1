@@ -1,3 +1,5 @@
+#Requires -PSEdition Core
+
 $sourceDir = "E:\.tmp\music\.meta\art\album"
 Get-ChildItem $sourceDir -Recurse -File | ForEach-Object {
     $imageFile = $_.fullname

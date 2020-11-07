@@ -1,3 +1,5 @@
+#Requires -PSEdition Core
+
 $workingDir = 'E:\.tmp\music'
 $mp3Dir = $workingDir + '\mp3'
 $alacDir = $workingDir + '\alac'

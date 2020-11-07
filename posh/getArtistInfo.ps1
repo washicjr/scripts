@@ -1,3 +1,5 @@
+#Requires -PSEdition Core
+
 param([string]$a)
 
 $baseURL = "http://www.allmusic.com/search/all/"
