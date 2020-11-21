@@ -1,7 +1,7 @@
 #Requires -PSEdition Core
 
-Get-ChildItem "E:\.tmp\.torrent\downloads\completed" -Recurse -File -Exclude *.mp3,*.m4a,*.flac,*.mp4, *.jpg | Remove-Item
-Get-ChildItem "D:\sysutil\vm\vbox\hostshare" -Recurse -File -Exclude *.mp3,*.m4a,*.flac,*.mp4, *.jpg | Remove-Item
+Get-ChildItem "E:\.tmp\.torrent\downloads\completed" -Recurse -File -Exclude *.mp3,*.m4a,*.flac,*.mp4,*.lnk, *.jpg | Remove-Item
+Get-ChildItem "D:\sysutil\vm\vbox\hostshare" -Recurse -File -Exclude *.mp3,*.m4a,*.flac,*.mp4,*.lnk,*.jpg | Remove-Item
 
 $processedDir = 'E:\.tmp\.torrent\downloads\completed\processed\'
 if (-not (Test-Path -LiteralPath $processedDir)) {new-item $processedDir -itemtype directory}
