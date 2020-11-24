@@ -38,8 +38,10 @@ $arFolders | ForEach-Object {
         $strName = $strName -replace 'BBCParadise', 'BBC Paradise'
         $strName = $strName -replace 'BigCockBully', 'Big Cock Bully'
         $strName = $strName -replace 'BlackedRaw', 'Blacked Raw'
+        $strName = $strName -replace 'Blackesonblondes', 'Blackes on Blondes'
         $strName = $strName -replace 'brothalovers', 'Brotha Lovers'
         $strName = $strName -replace 'danejones', 'Dane Jones'
+        $strName = $strName -replace 'dadcrush', 'Dad Crush'
         $strName = $strName -replace 'int3rracialpass', 'Interracial Pass'
         $strName = $strName -replace 'interracialpass', 'Interracial Pass'
         $strName = $strName -replace 'ManyVids', 'Many Vids'
@@ -48,6 +50,7 @@ $arFolders | ForEach-Object {
         $strName = $strName -replace 'PureTaboo', 'Pure Taboo'
         $strName = $strName -replace 'sweetsinner', 'Sweet Sinner'
         $strName = $strName -replace 'teensloveblackcocks', 'Teens Love Black Cocks'
+        $strName = $strName -replace ' and ', ' & '
 
         $newName = funcGetTitleCase($strName)
         $newLoc = $processedDir + $newName
