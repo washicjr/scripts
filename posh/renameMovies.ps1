@@ -32,6 +32,7 @@ function funcNormalizeFileName($oldStr){
     $funcStr = $funcStr -replace 'ManyVids ', 'Many Vids.'
     $funcStr = $funcStr -replace 'MonstersOfCock ', 'Monsters of Cock.'
     $funcStr = $funcStr -replace 'PureTaboo ', 'Pure Taboo.'
+    $funcStr = $funcStr -replace 'PutaLocura ', 'Puta Locura.'
     $funcStr = $funcStr -replace 'sweetsinner ', 'Sweet Sinner.'
     $funcStr = $funcStr -replace 'teensloveblackcocks ', 'Teens Love Black Cocks.'
     $funcStr = $funcStr -replace 'wifeysworld ', 'Wifeys World.'
