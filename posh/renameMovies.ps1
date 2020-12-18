@@ -19,6 +19,7 @@ function funcNormalizeFileName($oldStr){
     $funcStr = $funcStr -replace 'ArchAngel ', 'Archangel.'
     $funcStr = $funcStr -replace 'BBCParadise ', 'BBC Paradise.'
     $funcStr = $funcStr -replace 'BigCockBully ', 'Big Cock Bully.'
+    $funcStr = $funcStr -replace 'Blacked ', 'Blacked.'
     $funcStr = $funcStr -replace 'BlackedRaw ', 'Blacked Raw.'
     $funcStr = $funcStr -replace 'Blackesonblondes ', 'Blackes on Blondes.'
     $funcStr = $funcStr -replace 'brothalovers ', 'Brotha Lovers.'
@@ -61,6 +62,7 @@ function funcGetTitleCase($oldStr) {
     $funcStr = $funcStr -replace ' To ', ' to '
     $funcStr = $funcStr -replace ' With ', ' with '
     $funcStr = $funcStr -replace ' From ', ' from '
+    $funcStr = $funcStr -replace ' Mp4', '.mp4'
     return $funcStr
 }
 
