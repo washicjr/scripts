@@ -5,8 +5,8 @@ $crlf = "`r`n"
 
 $newStr = Get-Clipboard -Raw
 $newStr = $newStr -replace  'feat: ', '/'                  #Normalize Artists
-$newStr = $newStr -replace '/ ', '/'                         #Normalize Separator'
-$newStr = $newStr -replace ' /', '/'                         #Normalize Separator'
+$newStr = $newStr -replace '\s+/', '/'                      #Normalize Separator'
+$newStr = $newStr -replace '/\s+', '/'                      #Normalize Separator'
 $newStr = $newStr -replace '\d\d:\d\d', ''                #Delete Length Info
 $newStr = $newStr -replace 'Rdio', ''                       #Delete Rdio String
 $newStr = $newStr -replace 'Spotify', ''                    #Delete Spotify String
