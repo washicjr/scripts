@@ -19,7 +19,7 @@ $newStr = $newStr -replace '\t+', ''                           #Delete Extra Whi
 $newStr = $newStr -replace '\r\n', '|'                       #Add Delimiters
 $newStr = $newStr -replace '\|([0-9]+)\|', '||$1|'    #Create Unique Record
 $newStr = $newStr -replace '\|\|', $crlf                   #Create Unique Record
-$newStr = $newStr -replace 'Track Listing \- Disc \d\|Title\/ComposerPerformerTimeStream\|'
+$newStr = $newStr -replace '\|Track Listing \- Disc \d\|SampleTitle\/ComposerPerformerTimeStream', ''
 
 Set-Content -path $tagfile -Value $newStr -Force
 notepad $tagFile
