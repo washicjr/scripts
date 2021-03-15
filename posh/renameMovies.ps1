@@ -68,13 +68,12 @@ function funcGetTitleCase($oldStr) {
 }
 
 Get-ChildItem "E:\.tmp\.torrent\downloads\completed" -Recurse -File -Exclude *.mp3,*.m4a,*.flac,*.mp4,*.lnk,*.torrent, *.jpg | Remove-Item
-Get-ChildItem "D:\sysutil\vm\vbox\hostshare" -Recurse -File -Exclude *.mp3,*.m4a,*.flac,*.mp4,*.lnk,*.torrent,*.jpg | Remove-Item
 
 $processedDir = 'E:\.tmp\.torrent\downloads\completed\processed\'
 if (-not (Test-Path -LiteralPath $processedDir)) {new-item $processedDir -itemtype directory}
 Write-Host
 
-$arFolders = @('E:\.tmp\.torrent\downloads\completed\','D:\sysutil\vm\vbox\hostshare\')
+$arFolders = @('E:\.tmp\.torrent\downloads\completed\')
 $arFolders | ForEach-Object {
     $searchSpec = $PSItem + '*.mp4'
     $files = Get-ChildItem $searchSpec -recurse
