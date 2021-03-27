@@ -1,1 +1,0 @@
-flute.exe run %OneDriveConsumer%\sysutil\git\scripts\cmd\syncnativ.bat --directory %OneDriveConsumer%\sysutil\git\scripts\cmd --theme cwjCMD --target=window
