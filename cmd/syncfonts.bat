@@ -1,0 +1,1 @@
+robocopy c:\windows\fonts z:\bkp\c\windows\fonts /w:1 /r:1 /mir
