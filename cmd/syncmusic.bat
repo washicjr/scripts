@@ -1,0 +1,1 @@
+robocopy E:\music Z:\bkp\e\music /w:1 /r:1 /mir /XD $RECYCLE.BIN "System Volume Information"
