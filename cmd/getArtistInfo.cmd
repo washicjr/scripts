@@ -1,1 +1,1 @@
-Start  chrome http://www.allmusic.com/search/all/%1
+Start  msedge http://www.allmusic.com/search/all/%1
