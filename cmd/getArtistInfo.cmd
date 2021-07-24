@@ -1,1 +1,1 @@
-Start  msedge http://www.allmusic.com/search/all/%1
+Start  "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" http://www.allmusic.com/search/all/%1
