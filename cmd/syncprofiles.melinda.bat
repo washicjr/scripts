@@ -1,1 +1,1 @@
-robocopy d:\users\melinda z:\bkp\d\users\melinda /w:1 /r:1 /mir /xj
+robocopy d:\users\melinda z:\bkp\d\users\melinda /NODCOPY /w:1 /r:1 /mir /xj
