@@ -1,14 +1,20 @@
-$oneDriveConsumer = $env:OneDriveConsumer
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\7zip -target "$oneDriveConsumer\sysutil\bin\7zip"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\albumArtDownloader -target "$oneDriveConsumer\sysutil\bin\albumArtDownloader"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\clink -target "$oneDriveConsumer\sysutil\bin\clink"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\codecs -target "$oneDriveConsumer\sysutil\bin\codecs"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\fontbase -target "$oneDriveConsumer\sysutil\bin\fontBase"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\mp3tag -target "$oneDriveConsumer\sysutil\bin\mp3tag"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\notepadpp -target "$oneDriveConsumer\sysutil\bin\notepadpp"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\ooRegEdt -target "$oneDriveConsumer\sysutil\bin\ooRegEdt"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\sysinternals -target "$oneDriveConsumer\sysutil\bin\sysinternals"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\sublimeText -target "$oneDriveConsumer\sysutil\bin\sublimeText"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\tabby -target "$oneDriveConsumer\sysutil\bin\tabby"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\XnConvert -target "$oneDriveConsumer\sysutil\bin\XnConvert"
-New-Item -Itemtype symboliclink -path c:\sysutil\bin\xrecode3 -target "$oneDriveConsumer\sysutil\bin\xrecode3"
+<#
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+OLDER VERSION/LONG TERM SUPPORTED RELEASE OF POWERSHELL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#>
+New-Item -Itemtype symboliclink -path c:\sysutil\bin\posh\core\older -target c:\sysutil\bin\posh\core\7.3
+
+<#
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CURRENT/LATEST SUPPORTED RELEASE OF POWERSHELL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#>
+New-Item -Itemtype symboliclink -path c:\sysutil\bin\posh\core\current -target c:\sysutil\bin\posh\core\7.4
+
+<#
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+PREVIEW  RELEASE OF POWERSHELL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#>
+New-Item -Itemtype symboliclink -path c:\sysutil\bin\posh\core\preview -target c:\sysutil\bin\posh\core\7.5

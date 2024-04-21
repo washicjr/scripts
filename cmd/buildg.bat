@@ -1,0 +1,1 @@
+robocopy z:\bkp\g g:\ /NODCOPY /w:1 /r:1 /mir /XD $RECYCLE.BIN "System Volume Information"
