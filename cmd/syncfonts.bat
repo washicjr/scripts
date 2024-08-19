@@ -1,1 +1,1 @@
-robocopy c:\windows\fonts y:\bkp\c\windows\fonts /NODCOPY /w:1 /r:1 /mir
+robocopy c:\windows\fonts z:\bkp\c\windows\fonts /NODCOPY /w:1 /r:1 /mir
